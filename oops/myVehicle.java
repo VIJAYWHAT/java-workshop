@@ -1,6 +1,6 @@
 package oops;
 
-public class myCar {
+public class myVehicle {
     public static void main(String[] args) {
         Car bmw = new Car("White", "BMW");
         Car maruthi = new Car("Black", "Maruthi");
