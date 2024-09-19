@@ -1,4 +1,4 @@
-package com.techatpark.practices.oops;
+package oops;
 
 public class Car { // created Car class 
     String color;
