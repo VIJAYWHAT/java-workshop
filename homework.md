@@ -5,3 +5,10 @@
 - Java operators
 - Create Car class and create methods for that behaviors
 
+## Day - 3 (20Sep)
+- Typesafety in generics
+- collections framework
+- list
+- exception handling
+- compile time exception
+- file handling
