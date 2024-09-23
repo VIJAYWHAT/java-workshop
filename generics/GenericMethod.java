@@ -3,7 +3,7 @@ package generics;
 public class GenericMethod {
 
     public static <T> void print(T elements) {
-        System.out.println(elements);
+        System.out.println(elements + " is " + elements.getClass().getName());
 
     }
 
