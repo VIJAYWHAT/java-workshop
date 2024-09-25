@@ -37,5 +37,22 @@ public class stringHandling {
             System.out.println(word);
         }
     
+        StringBuilder CamelCase = new StringBuilder();
+        boolean nextUpperCase = false;
+        for (char c : string.toCharArray()) {
+            if (c == ' ' || c == ',') {
+                nextUpperCase = true;
+            } else {
+                if (nextUpperCase) {
+                    CamelCase.append(" ")
+                            .append(Character.toUpperCase(c));
+                    nextUpperCase = false;
+                } else {
+                    CamelCase.append(Character.toLowerCase(c));
+                }
+            }
+        }
+
+        System.out.println("CamelCase words: " + CamelCase);
     }
 }
