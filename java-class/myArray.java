@@ -1,7 +1,14 @@
 public class myArray {
     public static void main(String[] args) {
+        
+        myArray obj = new myArray();
+        obj.nameSearch();
+
+        
+    }
+    private void nameSearch() {
         String [] names = {"John", "Paul", "George", "Ringo"};
-        String searchName = "Ringo1";
+        String searchName = "Ringo";
         boolean result = false;
         for (int i = 0; i < names.length; i++) {
             if (names[i].equals(searchName)) {
@@ -19,6 +26,4 @@ public class myArray {
             System.out.println("Name not found");
         }
     }
-
-    
 }
