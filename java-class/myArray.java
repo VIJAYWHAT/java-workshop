@@ -2,8 +2,25 @@ public class myArray {
     public static void main(String[] args) {
         
         myArray obj = new myArray();
-        obj.basicArray();
+        obj.CopyArray();
 
+    }
+
+    private void CopyArray() {
+        String[] classList = {"A", "B", "C", "D", "E"};
+
+        String[] copyList = new String[classList.length];
+        for (int i = 0; i < classList.length; i++) {
+            copyList[i] = classList[i];
+        }
+        System.out.print("Original Array : ");
+        for (int i = 0; i < classList.length; i++) {
+            System.out.print(classList[i] + ", ");
+        }
+        System.out.print("\nCopied Array : ");
+        for (int i = 0; i < copyList.length; i++) {
+            System.out.print(copyList[i] + ", ");
+        }
     }
     
     private void basicArray(){
