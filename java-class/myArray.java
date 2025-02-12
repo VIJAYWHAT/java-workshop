@@ -1,9 +1,44 @@
+import java.util.Arrays;
+
 public class myArray {
     public static void main(String[] args) {
         
         myArray obj = new myArray();
-        obj.CopyArray();
+        obj.ArrayFunc();
 
+    }
+
+    private void basicArray(){
+        int[] array = new int[5];
+        array[0] = 10;
+        array[1] = 20;
+        array[2] = 30;
+        array[3] = 40;
+        array[4] = 50;
+        System.out.println("Basic Array");
+
+        System.out.println("First element of array: " + array[0]); // Prints the first element of the array
+        System.out.println("Last element of array: " + array[array.length - 1]); // Prints the last element of the array
+        
+        System.out.println("Array length is : " + array.length);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+        
+    }
+
+    private void ArrayFunc() {
+        String[] classList = {"A", "B", "C", "D", "E"};
+
+        System.out.println(Arrays.toString(classList)); // Prints the array as a string
+
+        int index = Arrays.binarySearch(classList, "D");
+        System.out.println("Index of D is : " + index);
+
+        int[] numbers = new int[5]; // Declares an empty array of integers
+        Arrays.fill(numbers, 4); // Fills the array with the specified value
+        System.out.println(Arrays.toString(numbers));
     }
 
     private void CopyArray() {
@@ -20,20 +55,6 @@ public class myArray {
         System.out.print("\nCopied Array : ");
         for (int i = 0; i < copyList.length; i++) {
             System.out.print(copyList[i] + ", ");
-        }
-    }
-    
-    private void basicArray(){
-        int[] array = new int[5];
-        array[0] = 10;
-        array[1] = 20;
-        array[2] = 30;
-        array[3] = 40;
-        array[4] = 50;
-        System.out.println("Basic Array");
-        System.out.println("Array length is : " + array.length);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
         }
     }
 
