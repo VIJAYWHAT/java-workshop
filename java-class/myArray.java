@@ -4,8 +4,8 @@ public class myArray {
     public static void main(String[] args) {
         
         myArray obj = new myArray();
-        obj.ArrayFunc();
-
+        // obj.twoDArray();
+        
     }
 
     private void basicArray(){
@@ -25,9 +25,29 @@ public class myArray {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
-        
     }
+    
 
+    private void twoDArray() {
+        int[][] twoDArray = new int[3][3];
+        twoDArray[0][0] = 1;
+        twoDArray[0][1] = 2;
+        twoDArray[0][2] = 3;
+        twoDArray[1][0] = 4;
+        twoDArray[1][1] = 5;
+        twoDArray[1][2] = 6;
+        twoDArray[2][0] = 7;
+        twoDArray[2][1] = 8;
+        twoDArray[2][2] = 9;
+
+        System.out.println("Two Dimensional Array");
+        for (int i = 0; i < twoDArray.length; i++) {
+            for (int j = 0; j < twoDArray[i].length; j++) {
+                System.out.print(twoDArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
     private void ArrayFunc() {
         String[] classList = {"A", "B", "C", "D", "E"};
 
@@ -78,4 +98,5 @@ public class myArray {
             System.out.println("Name not found");
         }
     }
+
 }
