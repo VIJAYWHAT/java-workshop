@@ -4,7 +4,7 @@ public class myArray {
     public static void main(String[] args) {
         
         myArray obj = new myArray();
-        // obj.twoDArray();
+        obj.twoDArray();
         
     }
 
@@ -39,13 +39,27 @@ public class myArray {
         twoDArray[2][0] = 7;
         twoDArray[2][1] = 8;
         twoDArray[2][2] = 9;
+        // int[][] twoDArray = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; // Another way to declare a 2D array
 
         System.out.println("Two Dimensional Array");
+        // Nested loops to iterate over the 2D array
         for (int i = 0; i < twoDArray.length; i++) {
             for (int j = 0; j < twoDArray[i].length; j++) {
                 System.out.print(twoDArray[i][j] + " ");
             }
             System.out.println();
+        }
+
+        String[][] student = {
+            {"Alice", "A"},
+            {"Bob", "B"},
+            {"Charlie", "C"}
+        };
+
+        for (int i = 0; i < student.length; i++) {
+            for (int j = 0; j < student[i].length; j++) {
+                System.out.println("Student " + (i+1) + " : " + student[i][j]);
+            }
         }
     }
     private void ArrayFunc() {
