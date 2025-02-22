@@ -94,7 +94,7 @@ public class myArray {
 
     private void nameSearch() {
         String [] names = {"Abi", "Dinesh", "Udhaya", "VJ"};
-        String searchName = "VJ";
+        String searchName = "VJ ";
         boolean result = false;
         for (int i = 0; i < names.length; i++) {
             if (names[i].equals(searchName)) {

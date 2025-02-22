@@ -1,8 +1,20 @@
 public class ArrayHW {
-    public static void main(String[] args) {
-        ArrayHW obj = new ArrayHW();
-        obj.maxValue();
 
+    public static void main(String[] arg) {
+        // ArrayHW arrayHW = new ArrayHW();
+        // arrayHW.arraySum();
+        int[] arr = {1,2,3,4,5};
+        System.out.println();
+        int[] rev = new int[5];
+        int index = 0;
+        for(int i = arr.length-1; i >= 0; i--) {
+        rev[index] = arr[i];
+            index++;
+        }
+        System.out.print("Reversed array is : ");
+        for(int a : rev) {
+            System.out.print(a + " ");
+        }
     }
 
     private void arraySum(){
