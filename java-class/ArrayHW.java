@@ -3,7 +3,7 @@ public class ArrayHW {
     public static void main(String[] arg) {
         ArrayHW arrayHW = new ArrayHW();
         arrayHW.reverseArray2();
-        
+         
     }
 
     private void arraySum(){
