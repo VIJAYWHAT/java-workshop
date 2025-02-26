@@ -20,5 +20,9 @@ public class Student extends Person {
     public void doActivity() {
         System.out.println("Student will be attending the exams.");
     }
+
+    void takeEvaluation() {
+        System.out.println("Student Take an evaluation");
+    }
     
 }

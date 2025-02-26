@@ -1,6 +1,8 @@
 package clg_management;
 import clg_management.inherit.Staff;
 import clg_management.inherit.Student;
+import clg_management.inherit.Math;
+import clg_management.inherit.Science;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +18,11 @@ public class Main {
 
     student.doActivity();
     staff.doActivity();
+
+    Math math = new Math();
+    Science science = new Science();
+
+    math.takeEvaluation();
+    science.takeEvaluation();
 }
 }
